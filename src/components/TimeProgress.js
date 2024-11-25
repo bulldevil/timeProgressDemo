@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { Progress } from '@/components/ui/progress'
 
-export default function TimeProgress() {
+const TimeProgress = () => {
   const [progress, setProgress] = useState({
     day: 0,
     week: 0,
@@ -63,4 +63,5 @@ export default function TimeProgress() {
   )
 }
 
-
+const root = document.getElementById('root');
+ReactDOM.render(<TimeProgress />, root);
